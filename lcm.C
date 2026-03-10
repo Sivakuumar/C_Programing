@@ -6,13 +6,15 @@ int main()
     scanf("%d",&a);
     printf("Enter an number 2 : ");
     scanf("%d",&b);
-    for(LCM = (a<b)?a:b; ;LCM++)
+    LCM = (a<b)?a:b;
+    while( 1)
     {
         if((LCM % a == 0) && (LCM % b == 0))
         {
             printf("%d",LCM);
             goto end;
         }
+        LCM++;
     }
     end:
     return 0;
