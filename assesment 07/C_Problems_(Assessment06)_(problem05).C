@@ -8,13 +8,12 @@ int main()
 }
 void disp_odd(int x)
 {
-    int y;
-    int sum ;
+    int y ;
     for(y=x;y<=9;y++)
     {
        if (y%2!=0)
        {
-        printf(" %d\n", y);
+        printf("%d\n", y);
        }
 
     }
